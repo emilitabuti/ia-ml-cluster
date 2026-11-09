@@ -1,14 +1,14 @@
-# IA ML Cluster - Clustering das receitas do orçamento dos EUA
+# IA ML Cluster - Clustering das agências do orçamento dos EUA
 
-Mini projeto de **IA não supervisionada** (disciplina de IA/ML). A ideia é agrupar contas de receita do orçamento federal americano que se comportam de forma parecida ao longo do tempo (1962-2015).
+Mini projeto de **IA não supervisionada** (disciplina de IA/ML). A ideia é agrupar as agências do governo federal americano que tiveram um comportamento de orçamento parecido entre 1976 e 2016.
 
-- Notebook com EDA e modelos: [eda_clustering_budget.ipynb](eda_clustering_budget.ipynb)
-- Dados: `data/BUDGET-2016-DB-3.csv` (Public Budget Database, FY 2016, tabela de Receipts - [govinfo.gov](https://www.govinfo.gov/app/details/BUDGET-2016-DB/BUDGET-2016-DB-3))
-- Modelo usado: **K-Means** (k = 5, silhueta 0,40)
+- Notebook com EDA e modelo: [eda_clustering_budget.ipynb](eda_clustering_budget.ipynb)
+- Dados: `data/budget.csv`, do Kaggle [US Federal Government Budget 1976-2022](https://www.kaggle.com/datasets/mfaaris/usa-budget-authority-by-agency-19762022)
+- Modelo usado: **K-Means** (k = 5, silhueta 0,32)
 
 ## Resultado resumido
 
-Os 5 grupos do K-Means: receitas grandes e permanentes, receitas novas, previdência (fora do orçamento), receitas encerradas e contas instáveis/de ajuste.
+Os 5 grupos do K-Means: agências grandes e estáveis, médias de crescimento acelerado, médias de crescimento lento, pequenas e irregulares, e uma agência isolada (Executive Office of the President, por causa dos picos).
 
 ## Como rodar
 
