@@ -20,4 +20,4 @@ jupyter notebook eda_clustering_budget.ipynb
 ## Integrantes
 
 - Emili Vieira Tabuti
-- (nome do colega)
+- Caroline Guimarães Campos
